@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    height: 100vh;
+    /* Ocupa toda la altura de la ventana */
+    margin: 0;
+    /* Elimina los márgenes por defecto del body */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*Centra Horizontalmente*/
+    align-items: center;
+    /*Centra Verticlamente*/
+}
+
+.category {
+    width: 1000px;             /* Ancho fijo de los contenedores */
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
