@@ -1,0 +1,120 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.taskbackground{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7df94;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    
+}
+.taskbackground > ul{
+  list-style-type: none;
+    
+}
+
+/* Estilos para cada tipo de tarea */
+.in-progress {
+    background-color: #f0c239;
+}
+
+.completed {
+    background-color: #b3e6b3;
+}
+
+.wont-do {
+    background-color: #f4c6c6;
+}
+
+.to-do {
+    background-color: #e0eafc;
+}
+.to-do > p{
+    padding: 1%;
+}
+
+.task-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.task-content h2 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.task-content p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.task-status img {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .task-status img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .task-content h2 {
+        font-size: 1em;
+    }
+}
