@@ -1,24 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Tareas Organizadas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div class="container">
-        <ul>
-            <ol><div class="category"><p>Task in Progress</p></div></ol>
-            <ol><div class="category"><p>Task Completed</p></div></ol>
-            <ol><div class="category"><p>Task Won't Do</p></div></ol>
-            <ol><div class="category"><p>Task To Do</p></div></ol>
-            <ol><div class="category"><p>Add new Task</p></div></ol>
-        </ul>
+        <h1>Tareas para mantener organizado</h1>
+        
+        <div class="task in-progress">
+            <span class="task-icon">⏳</span>
+            <h2>Task in Progress</h2>
+            <span class="task-status">➔</span>
+        </div>
+
+        <div class="task completed">
+            <span class="task-icon">✅</span>
+            <h2>Task Completed</h2>
+            <span class="task-status">✔</span>
+        </div>
+
+        <div class="task wont-do">
+            <span class="task-icon">☕</span>
+            <h2>Task Won’t Do</h2>
+            <span class="task-status">✖</span>
+        </div>
+
+        <div class="task to-do">
+            <span class="task-icon">📚</span>
+            <h2>Task To Do</h2>
+            <p>Work on a challenge on devChallenges.io, learn TypeScript.</p>
+        </div>
     </div>
-
 </body>
-
 </html>
+
