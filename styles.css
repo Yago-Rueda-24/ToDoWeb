@@ -37,9 +37,23 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
+.taskbackground{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7df94;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    
+}
+.taskbackground > ul{
+  list-style-type: none;
+    
+}
+
 /* Estilos para cada tipo de tarea */
 .in-progress {
-    background-color: #f7df94;
+    background-color: #f0c239;
 }
 
 .completed {
