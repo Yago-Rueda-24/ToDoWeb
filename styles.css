@@ -37,18 +37,19 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-.taskbackground{
+.taskcontainer {
     display: flex;
     flex-direction: column;
-    background-color: #f7df94;
+
     border-radius: 12px;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    
+
 }
-.taskbackground > ul{
-  list-style-type: none;
-    
+
+.taskcontainer>ul {
+    list-style-type: none;
+
 }
 
 /* Estilos para cada tipo de tarea */
@@ -56,18 +57,35 @@ h1 {
     background-color: #f0c239;
 }
 
+#In-Progress {
+    background-color: #f7df94;
+}
+
 .completed {
+    background-color: #7ee67e;
+}
+
+#Completed {
     background-color: #b3e6b3;
 }
 
 .wont-do {
+    background-color: #eb8383;
+}
+
+#Wont-Do {
     background-color: #f4c6c6;
 }
 
 .to-do {
-    background-color: #e0eafc;
+    background-color: #9db5e2;
 }
-.to-do > p{
+
+#To-Do {
+    background-color: #9eafcf;
+}
+
+.to-do>p {
     padding: 1%;
 }
 
