@@ -6,11 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tareas Organizadas</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="controller.js"></script>
 </head>
 
 <body>
     <div class="container">
         <h1>Tareas para mantener organizado</h1>
+        
+            <button class="button" id="add">Add Task</button>
+            <script>
+                // Obtener el botón por su ID
+                const button = document.getElementById("add");
+        
+                // Agregar un evento click para mostrar una alerta
+                button.onclick = function() {
+                    alert("¡Has presionado el botón!");
+                };
+            </script>
+        
         <div class="taskcontainer" id="In-Progress">
             <div class="task in-progress">
                 <span class="task-icon">⏳</span>
