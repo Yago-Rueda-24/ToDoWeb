@@ -1,17 +1,14 @@
-const BDTunnel = require('../Modelo/BDTunnel');
-const Task = require('../Modelo/Task');
+const BDTunnel = require('../src/Modelo/BDTunnel');
+const Task = require('../src/Modelo/Task');
 
 
 async function main() {
-    (async () => {
-        const bdTunnel = new BDTunnel('Tareas', 'UserPrueba');
-        await bdTunnel.conectar();
     
+    
+        const bdTunnel = new BDTunnel('Tareas', 'UserPrueba');
         const objetoEjemplo = new Task('Prueba33', 'Finalizado');
         await bdTunnel.insert(objetoEjemplo);
-    
-        await bdTunnel.desconectar();
-    })();
-    
+  
+
 }
 main();
