@@ -8,7 +8,7 @@ const dbName = 'Tareas';
 const collectionName = 'UserPrueba';
 
 // Objeto que queremos guardar en la base de datos
-const objetoEjemplo = new Task('Prueba2','Finalizado');
+const objetoEjemplo = new Task('Prueba33','Finalizado');
 
 // Función para conectar a la base de datos, guardar el objeto y consultar los datos
 async function main() {
