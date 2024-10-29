@@ -55,7 +55,14 @@ h1 {
 
 .taskcontainer>ul {
     list-style-type: none;
+    
 
+
+}
+.tarea{
+    border-radius: 15px;
+    margin: 2%;
+    padding: 15px;
 }
 
 /* Estilos para cada tipo de tarea */

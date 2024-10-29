@@ -4,6 +4,7 @@ const boton = document.getElementById('add');
 boton.addEventListener('click', function() {
     const list =document.getElementById('ListInProgress');
     const newelement= document.createElement('li');
+    newelement.className= 'tarea in-progress'
     newelement.textContent= 'Ejemplo';
     list.appendChild(newelement);
     
