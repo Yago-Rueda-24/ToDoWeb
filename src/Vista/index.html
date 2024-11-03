@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tareas Organizadas</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modalstyle.css">
     <!--El defer del script es muy importante, descarga el script antes cargar el HMTL pero no lo usa hasta que se carge toda la interfaz-->
     <!--No borrar el Defer-->
     <script src="../Controlador/controller.js" defer></script>
@@ -15,7 +16,8 @@
     <div class="container">
         <h1>Tareas para mantener organizado</h1>
         
-            <button class="button" id="add">Add Task</button>
+            <button class="button" id="add" onclick="addTask()">Add Task</button>
+            <button class="button" id="modalbutton" onclick="openModal()">Open Modal</button>
         
         
         <div class="taskcontainer" id="In-Progress">
@@ -67,7 +69,31 @@
                 <li>Ejemplo</li>
             </ul>
         </div>
-    </div>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+          
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" name="fecha" required>
+          
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado">
+                  <option value="pendiente">Pendiente</option>
+                  <option value="trabajando">Trabajando</option>
+                  <option value="completado">Completado</option>
+              </select>
+          
+              <button id="closeModal" type="button" onclick="cancelar()">Cancelar</button>
+              <button type="submit">Aceptar</button>
+          </form>
+          
+          </div>
+        </div>
+    </div >
 </body>
 
 </html>
